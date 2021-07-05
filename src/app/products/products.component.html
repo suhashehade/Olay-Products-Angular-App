@@ -1,7 +1,7 @@
 <div class="container mb-5 mt-4">
     <h2>Olay Products</h2>
-    <div class="d-flex">
-        <div class="card w-30 me-4" *ngFor="let prod of prods">
+    <div class="row">
+        <div class="card col-lg-3 col-md-12 col-sm-12 me-5" *ngFor="let prod of prods">
             <img
               [src]="prod.img"
               [class]="prod.name"
