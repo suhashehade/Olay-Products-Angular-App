@@ -1,0 +1,27 @@
+
+<div class="container mb-5 mt-5">
+
+    <h2>Contact</h2>
+<div class="input-group mb-3 ">
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+      aria-describedby="basic-addon1" />
+  </div>
+  <div class="input-group mb-3">
+    <input type="email" class="form-control" placeholder="Email" aria-label="Email"
+      aria-describedby="basic-addon1" />
+  </div>
+  <div class="input-group mb-3">
+    <textarea mdbInput class="form-control h-25" placeholder="Message" id="textAreaExample" rows="4"></textarea>
+  </div>
+<select class="custom-select">
+    <option selected>Open this select menu</option>
+    <option value="1" *ngFor="let option of options">
+        {{option}}
+    </option>
+  </select>
+
+  <button class="btn btn-outline-primary mt-3" type="submit" id="button-addon1" mdbRipple rippleColor="danger" >
+    Submit
+  </button>
+
+</div>

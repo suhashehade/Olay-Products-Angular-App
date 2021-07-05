@@ -1,0 +1,20 @@
+<div class="container mb-5 mt-4">
+    <h2>Olay Products</h2>
+    <div class="d-flex">
+        <div class="card w-30 me-4" *ngFor="let prod of prods">
+            <img
+              [src]="prod.img"
+              [class]="prod.name"
+              [alt]="prod.name"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{prod.name}}</h5>
+              <p class="card-text text-success">
+                {{prod.price | currency}} 
+              </p>
+              <a href="#!" class="btn btn-primary"><i class="fas fa-shopping-cart"></i>Buy</a>
+            </div>
+          </div>
+          
+    </div>
+</div>
